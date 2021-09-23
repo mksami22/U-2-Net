@@ -84,7 +84,6 @@ def main():
         net.cuda()
     else:        
         net.load_state_dict(torch.load(model_dir, map_location=torch.device('cpu')))
-
     net.eval()
 
     # --------- 4. inference for each image ---------
